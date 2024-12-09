@@ -1,0 +1,164 @@
+/* styles.css */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #FFFFFF; /* Neutral white text */
+    background-color: #09324E; /* Dark blue background */
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+/* Header Section */
+header {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(14, 50, 78, 0.8); /* Semi-transparent dark blue */
+    border-radius: 10px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+/* Video Background */
+header video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(80%);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    color: #0BB3DF; /* Bright blue */
+    text-shadow: 2px 2px 4px #09324E;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    color: #57BAD2; /* Secondary blue */
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 15px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+    position: relative;
+    z-index: 1;
+}
+
+header p {
+    position: relative;
+    z-index: 1;
+    font-size: 1rem;
+    color: #FEFEFE; /* Light background element */
+    margin-top: 10px;
+}
+
+/* Section Titles */
+h3 {
+    font-size: 2rem;
+    color: #0BB3DF; /* Bright blue */
+    text-transform: uppercase;
+    margin: 20px 0 10px;
+    text-shadow: 2px 2px 4px #09324E;
+}
+
+/* Content Styling */
+p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #FEFEFE; /* Light text for readability */
+}
+
+ul {
+    margin-left: 20px;
+    list-style: none;
+}
+
+ul li {
+    font-weight: bold;
+    color: #0BB3DF; /* Bright blue for list titles */
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+ul p {
+    margin-left: 15px;
+    font-weight: normal;
+    color: #57BAD2; /* Secondary blue for details */
+    font-size: 1rem;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    background-color: #09324E; /* Dark blue footer */
+    padding: 15px;
+    border-radius: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    margin: 5px 0;
+    color: #FEFEFE; /* Light accent */
+}
+
+footer a {
+    color: #0BB3DF; /* Bright blue links */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#credit {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: #57BAD2; /* Secondary blue */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header h2 {
+        font-size: 1.2rem;
+    }
+
+    header img {
+        width: 80px;
+        height: 80px;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+}
